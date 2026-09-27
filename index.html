@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prime Motors Car Services</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Remix Icons -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+        rel="stylesheet"
+    >
+    <link rel="icon" type="image/png" href="./images/brandlogo.png">
+</head>
+
+
+<body class="bg-black text-white">
+
+
+    <!-- ===================================================== -->
+    <!-- NAVBAR -->
+    <!-- ===================================================== -->
+
+    <header class="sticky top-0 z-50 px-4 md:px-10 pt-3">
+
+        <nav
+            class="mx-auto flex max-w-[1180px] items-center justify-between
+                   rounded-2xl border border-yellow-600/40
+                   bg-black/85 px-5 py-3 backdrop-blur-xl
+                   shadow-[0_0_30px_rgba(255,180,0,0.08)]"
+        >
+
+            <!-- Logo -->
+            <a href="#">
+                <img
+                    src="./images/brandlogo.png"
+                    alt="Prime Motors"
+                    class="h-12 scale-150 relative left-4 w-auto md:h-14"
+                >
+            </a>
+
+
+            <!-- Navigation Links -->
+            <div class="hidden items-center gap-9 md:flex">
+
+                <a
+                    href="#home"
+                    class="border-b-2 border-yellow-400 pb-2
+                           text-sm font-semibold text-yellow-400"
+                >
+                    HOME
+                </a>
+
+                <a
+                    href="#services"
+                    class="text-sm font-semibold transition
+                           hover:text-yellow-400"
+                >
+                    SERVICES
+                </a>
+
+                <a
+                    href="#team"
+                    class="text-sm font-semibold transition
+                           hover:text-yellow-400"
+                >
+                    TEAM
+                </a>
+
+                <a
+                    href="#about"
+                    class="text-sm font-semibold transition
+                           hover:text-yellow-400"
+                >
+                    ABOUT
+                </a>
+
+                <a
+                    href="#contact"
+                    class="text-sm font-semibold transition
+                           hover:text-yellow-400"
+                >
+                    CONTACT
+                </a>
+
+            </div>
+
+
+            <!-- Book Button -->
+            <a
+                href="#contact"
+                class="hidden rounded-full border border-yellow-400
+                       px-5 py-3 text-sm font-semibold text-yellow-400
+                       transition hover:bg-yellow-400 hover:text-black
+                       md:block"
+            >
+                <i class="ri-calendar-line mr-2"></i>
+                BOOK A SERVICE
+            </a>
+
+
+            <!-- Mobile Menu -->
+            <button class="text-2xl text-yellow-400 md:hidden">
+                <i class="ri-menu-line"></i>
+            </button>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ===================================================== -->
+    <!-- HERO -->
+    <!-- ===================================================== -->
+
+    <section
+        id="home"
+        class="relative min-h-[650px] overflow-hidden
+               border-b border-yellow-500/20"
+    >
+
+        <!-- Main Car Image -->
+        <img
+            src="./images/MainCarImage.png"
+            alt="Prime Motors Car"
+            class="absolute inset-0 h-full w-full object-cover"
+        >
+
+
+        <!-- Dark Gradient -->
+        <div
+            class="absolute inset-0
+                   bg-gradient-to-r
+                   from-black via-black/80 to-black/20"
+        ></div>
+
+
+        <!-- Bottom Gradient -->
+        <div
+            class="absolute bottom-0 left-0 right-0 h-40
+                   bg-gradient-to-t from-black to-transparent"
+        ></div>
+
+
+        <!-- Hero Content -->
+        <div
+            class="relative mx-auto flex min-h-[650px] max-w-[1180px]
+                   items-center px-6 pt-16"
+        >
+
+            <div class="max-w-xl">
+
+                <p
+                    class="mb-4 text-xs font-bold tracking-[0.35em]
+                           text-yellow-400"
+                >
+                    AUTO REPAIR & CUSTOMIZATION —
+                </p>
+
+
+                <h1
+                    class="text-4xl font-black leading-[1.05]
+                           sm:text-5xl md:text-6xl"
+                >
+                    PRECISION.
+                    <br>
+
+                    <span class="text-yellow-400">
+                        PERFORMANCE.
+                    </span>
+
+                    <br>
+
+                    PERFECTION.
+                </h1>
+
+
+                <p
+                    class="mt-5 max-w-md text-sm leading-6
+                           text-gray-300"
+                >
+                    From denting and painting to servicing, repairs,
+                    detailing and customization — we keep your car
+                    in top shape, inside and out.
+                </p>
+
+
+                <!-- Buttons -->
+                <div class="mt-7 flex flex-wrap gap-4">
+
+                    <a
+                        href="#services"
+                        class="rounded-full bg-yellow-400
+                               px-7 py-3 text-sm font-bold text-black
+                               shadow-[0_0_25px_rgba(255,190,0,0.3)]
+                               transition hover:bg-yellow-300"
+                    >
+                        Explore Services
+                        <i class="ri-arrow-right-line ml-2"></i>
+                    </a>
+
+
+                    <a
+                        href="#about"
+                        class="rounded-full border border-yellow-400
+                               px-7 py-3 text-sm font-bold
+                               text-white transition
+                               hover:bg-yellow-400 hover:text-black"
+                    >
+                        <i class="ri-chat-3-line mr-2"></i>
+                        Get a Quote
+                    </a>
+
+                    <!-- Social Media Links -->
+                    <div class="mt-6 flex basis-full items-center gap-4">
+
+                     <!-- WhatsApp -->
+                    <a
+                        href="https://wa.me/919939536053"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex h-10 w-10 items-center justify-center rounded-full border border-yellow-400 text-yellow-400 transition hover:bg-yellow-400 hover:text-black"
+                    >
+                    <i class="ri-whatsapp-line text-xl"></i>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a
+                        href="https://www.instagram.com/prime_motors06/?utm_source=ig_web_button_share_sheet"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex h-10 w-10 items-center justify-center rounded-full border border-yellow-400 text-yellow-400 transition hover:bg-yellow-400 hover:text-black"
+                    >
+                        <i class="ri-instagram-line text-xl"></i>
+                    </a>
+
+                    <!-- Facebook -->
+                    <a
+                        href="https://www.facebook.com/YOUR_PAGE/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex h-10 w-10 items-center justify-center rounded-full border border-yellow-400 text-yellow-400 transition hover:bg-yellow-400 hover:text-black"
+                    >
+                        <i class="ri-facebook-line text-xl"></i>
+                    </a>
+
+                </div>
+
+                </div>
+
+
+                <!-- Stats -->
+                <div
+                    class="mt-10 flex flex-wrap gap-7
+                           border-t border-white/20 pt-5"
+                >
+
+                    <div class="flex items-center gap-3">
+                        <i class="ri-shield-check-line text-2xl text-yellow-400"></i>
+
+                        <div>
+                            <p class="font-bold">10+</p>
+                            <p class="text-xs text-gray-400">
+                                Years Experience
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="flex items-center gap-3">
+                        <i class="ri-car-line text-2xl text-yellow-400"></i>
+
+                        <div>
+                            <p class="font-bold">500+</p>
+                            <p class="text-xs text-gray-400">
+                                Cars Serviced
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="flex items-center gap-3">
+                        <i class="ri-tools-line text-2xl text-yellow-400"></i>
+
+                        <div>
+                            <p class="font-bold">Complete</p>
+                            <p class="text-xs text-gray-400">
+                                Car Care
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===================================================== -->
+    <!-- SERVICES -->
+    <!-- ===================================================== -->
+
+    <section
+        id="services"
+        class="bg-[#070707] px-5 py-16 md:px-10"
+    >
+
+        <div class="mx-auto max-w-[1180px]">
+
+            <!-- Heading -->
+            <div class="mb-10 text-center">
+
+                <div class="mb-3 flex items-center justify-center gap-4">
+
+                    <span class="h-px w-10 bg-yellow-500"></span>
+
+                    <p
+                        class="text-xs font-bold tracking-[0.35em]
+                               text-yellow-400"
+                    >
+                        EVERYTHING YOUR CAR NEEDS
+                    </p>
+
+                    <span class="h-px w-10 bg-yellow-500"></span>
+
+                </div>
+
+
+                <h2 class="text-3xl font-black md:text-4xl">
+                    OUR SERVICES
+                </h2>
+
+                <p class="mt-2 text-sm text-gray-400">
+                    Professional care. Premium results. All under one roof.
+                </p>
+
+            </div>
+
+
+
+            <!-- Service Cards -->
+            <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+
+
+                <!-- Card 1 -->
+                <div
+                    class="group relative min-h-[170px] overflow-hidden
+                           rounded-xl border border-yellow-500/40
+                           bg-black"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1486006920555-c77dcf18193c?auto=format&fit=crop&w=900&q=80"
+                        class="absolute inset-0 h-full w-full object-cover
+                               opacity-40 transition duration-500
+                               group-hover:scale-105"
+                    >
+
+                    <div
+                        class="absolute inset-0
+                               bg-gradient-to-t from-black
+                               via-black/70 to-transparent"
+                    ></div>
+
+
+                    <div class="relative p-5">
+
+                        <div
+                            class="mb-3 flex h-12 w-12 items-center
+                                   justify-center rounded-full
+                                   border border-yellow-400
+                                   text-2xl text-yellow-400"
+                        >
+                            <i class="ri-car-washing-line"></i>
+                        </div>
+
+                        <h3 class="font-bold">
+                            DENTING & BODY REPAIR
+                        </h3>
+
+                        <p class="mt-2 text-xs leading-5 text-gray-300">
+                            Fix dents, scratches and body damage
+                            with expert precision.
+                        </p>
+
+                        <div
+                            class="absolute bottom-5 right-5 flex h-8 w-8
+                                   items-center justify-center
+                                   rounded-full border border-yellow-400
+                                   text-yellow-400"
+                        >
+                            <i class="ri-arrow-right-line"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Card 2 -->
+                <div
+                    class="group relative min-h-[170px] overflow-hidden
+                           rounded-xl border border-yellow-500/40 bg-black"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=900&q=80"
+                        class="absolute inset-0 h-full w-full object-cover
+                               opacity-40 transition duration-500
+                               group-hover:scale-105"
+                    >
+
+                    <div
+                        class="absolute inset-0
+                               bg-gradient-to-t from-black
+                               via-black/70 to-transparent"
+                    ></div>
+
+
+                    <div class="relative p-5">
+
+                        <div
+                            class="mb-3 flex h-12 w-12 items-center
+                                   justify-center rounded-full
+                                   border border-yellow-400
+                                   text-2xl text-yellow-400"
+                        >
+                            <i class="ri-brush-line"></i>
+                        </div>
+
+                        <h3 class="font-bold">
+                            PAINTING & COLOR
+                        </h3>
+
+                        <p class="mt-2 text-xs leading-5 text-gray-300">
+                            Flawless paint jobs with premium finishes
+                            and perfect color matching.
+                        </p>
+
+                        <div
+                            class="absolute bottom-5 right-5 flex h-8 w-8
+                                   items-center justify-center
+                                   rounded-full border border-yellow-400
+                                   text-yellow-400"
+                        >
+                            <i class="ri-arrow-right-line"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Card 3 -->
+                <div
+                    class="group relative min-h-[170px] overflow-hidden
+                           rounded-xl border border-yellow-500/40 bg-black"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=900&q=80"
+                        class="absolute inset-0 h-full w-full object-cover
+                               opacity-40 transition duration-500
+                               group-hover:scale-105"
+                    >
+
+                    <div
+                        class="absolute inset-0
+                               bg-gradient-to-t from-black
+                               via-black/70 to-transparent"
+                    ></div>
+
+
+                    <div class="relative p-5">
+
+                        <div
+                            class="mb-3 flex h-12 w-12 items-center
+                                   justify-center rounded-full
+                                   border border-yellow-400
+                                   text-2xl text-yellow-400"
+                        >
+                            <i class="ri-settings-5-line"></i>
+                        </div>
+
+                        <h3 class="font-bold">
+                            FULL CAR SERVICE
+                        </h3>
+
+                        <p class="mt-2 text-xs leading-5 text-gray-300">
+                            Keep your car running at its best
+                            with complete servicing & maintenance.
+                        </p>
+
+                        <div
+                            class="absolute bottom-5 right-5 flex h-8 w-8
+                                   items-center justify-center
+                                   rounded-full border border-yellow-400
+                                   text-yellow-400"
+                        >
+                            <i class="ri-arrow-right-line"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Card 4 -->
+                <div
+                    class="group relative min-h-[170px] overflow-hidden
+                           rounded-xl border border-yellow-500/40 bg-black"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&fit=crop&w=900&q=80"
+                        class="absolute inset-0 h-full w-full object-cover
+                               opacity-40 transition duration-500
+                               group-hover:scale-105"
+                    >
+
+                    <div
+                        class="absolute inset-0
+                               bg-gradient-to-t from-black
+                               via-black/70 to-transparent"
+                    ></div>
+
+
+                    <div class="relative p-5">
+
+                        <div
+                            class="mb-3 flex h-12 w-12 items-center
+                                   justify-center rounded-full
+                                   border border-yellow-400
+                                   text-2xl text-yellow-400"
+                        >
+                            <i class="ri-flashlight-line"></i>
+                        </div>
+
+                        <h3 class="font-bold">
+                            AC & ELECTRICAL
+                        </h3>
+
+                        <p class="mt-2 text-xs leading-5 text-gray-300">
+                            Stay cool and connected with expert
+                            AC & electrical repairs.
+                        </p>
+
+                        <div
+                            class="absolute bottom-5 right-5 flex h-8 w-8
+                                   items-center justify-center
+                                   rounded-full border border-yellow-400
+                                   text-yellow-400"
+                        >
+                            <i class="ri-arrow-right-line"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Card 5 -->
+                <div
+                    class="group relative min-h-[170px] overflow-hidden
+                           rounded-xl border border-yellow-500/40 bg-black"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=900&q=80"
+                        class="absolute inset-0 h-full w-full object-cover
+                               opacity-40 transition duration-500
+                               group-hover:scale-105"
+                    >
+
+                    <div
+                        class="absolute inset-0
+                               bg-gradient-to-t from-black
+                               via-black/70 to-transparent"
+                    ></div>
+
+
+                    <div class="relative p-5">
+
+                        <div
+                            class="mb-3 flex h-12 w-12 items-center
+                                   justify-center rounded-full
+                                   border border-yellow-400
+                                   text-2xl text-yellow-400"
+                        >
+                            <i class="ri-drop-line"></i>
+                        </div>
+
+                        <h3 class="font-bold">
+                            DETAILING & CERAMIC
+                        </h3>
+
+                        <p class="mt-2 text-xs leading-5 text-gray-300">
+                            Deep cleaning, paint protection and
+                            a showroom finish.
+                        </p>
+
+                        <div
+                            class="absolute bottom-5 right-5 flex h-8 w-8
+                                   items-center justify-center
+                                   rounded-full border border-yellow-400
+                                   text-yellow-400"
+                        >
+                            <i class="ri-arrow-right-line"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Card 6 -->
+                <div
+                    class="group relative min-h-[170px] overflow-hidden
+                           rounded-xl border border-yellow-500/40 bg-black"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80"
+                        class="absolute inset-0 h-full w-full object-cover
+                               opacity-40 transition duration-500
+                               group-hover:scale-105"
+                    >
+
+                    <div
+                        class="absolute inset-0
+                               bg-gradient-to-t from-black
+                               via-black/70 to-transparent"
+                    ></div>
+
+
+                    <div class="relative p-5">
+
+                        <div
+                            class="mb-3 flex h-12 w-12 items-center
+                                   justify-center rounded-full
+                                   border border-yellow-400
+                                   text-2xl text-yellow-400"
+                        >
+                            <i class="ri-settings-3-line"></i>
+                        </div>
+
+                        <h3 class="font-bold">
+                            CUSTOMIZATION & MODS
+                        </h3>
+
+                        <p class="mt-2 text-xs leading-5 text-gray-300">
+                            Make it yours. Performance, style
+                            and more.
+                        </p>
+
+                        <div
+                            class="absolute bottom-5 right-5 flex h-8 w-8
+                                   items-center justify-center
+                                   rounded-full border border-yellow-400
+                                   text-yellow-400"
+                        >
+                            <i class="ri-arrow-right-line"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===================================================== -->
+    <!-- TEAM -->
+    <!-- ===================================================== -->
+
+    <section
+        id="team"
+        class="border-t border-yellow-500/10
+               bg-black px-5 py-16 md:px-10"
+    >
+
+        <div class="mx-auto max-w-[1180px]">
+
+
+            <div class="mb-10 text-center">
+
+                <div class="mb-3 flex items-center justify-center gap-4">
+
+                    <span class="h-px w-10 bg-yellow-500"></span>
+
+                    <p
+                        class="text-xs font-bold tracking-[0.35em]
+                               text-yellow-400"
+                    >
+                        OUR TEAM
+                    </p>
+
+                    <span class="h-px w-10 bg-yellow-500"></span>
+
+                </div>
+
+
+                <h2 class="text-3xl font-black md:text-4xl">
+                    SKILLED PEOPLE. REAL PASSION.
+                </h2>
+
+                <p class="mt-2 text-sm text-gray-400">
+                    Meet the experts behind your car's care.
+                </p>
+
+            </div>
+
+
+
+            <!-- Team Grid -->
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+
+
+                <!-- Person -->
+                <div
+                    class="overflow-hidden rounded-xl
+                           border border-white/20 bg-[#090909]"
+                >
+
+                    <img
+                        src="./images/Ravi.jpeg"
+                        class="h-48 w-full object-cover object-[center_20%]"
+                    >
+
+                    <div class="p-4">
+
+                        <h3 class="font-bold">Ravi Singh</h3>
+
+                        <p class="text-sm font-semibold text-yellow-400">
+                            Workshop Partner
+                        </p>
+
+                        <p class="mt-2 text-xs leading-5 text-gray-400">
+                            Handles operations, customer relations
+                            and ensures top-quality service in every job.
+                        </p>
+
+                        <div class="mt-4 flex gap-3">
+
+                            <a
+                        href="https://wa.me/919304606053"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex h-8 w-8 items-center justify-center rounded-full border border-yellow-500 text-yellow-400"
+                        >
+                        <i class="ri-whatsapp-line"></i>
+                        </a>                    
+
+                            <a
+                        href="tel:+919304606053"
+                        class="flex h-8 w-8 items-center justify-center rounded-full border border-yellow-500 text-yellow-400"
+                        >
+                        <i class="ri-phone-line"></i>
+                         </a>                    
+
+                            <a
+                        href="https://www.instagram.com/ravi_rehance?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex h-8 w-8 items-center justify-center rounded-full border border-yellow-500 text-yellow-400"
+                        >                   
+                        <i class="ri-instagram-line"></i>
+                        </a>                    
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Person -->
+                <div
+                    class="overflow-hidden rounded-xl
+                           border border-white/20 bg-[#090909]"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80"
+                        class="h-48 w-full object-cover"
+                    >
+
+                    <div class="p-4">
+
+                        <h3 class="font-bold">Aman</h3>
+
+                        <p class="text-sm font-semibold text-yellow-400">
+                            Master Technician
+                        </p>
+
+                        <p class="mt-2 text-xs leading-5 text-gray-400">
+                            Diagnoses, repairs and keeps your vehicle
+                            running like new.
+                        </p>
+
+                        <div class="mt-4 flex gap-3">
+
+                            <a href="#"
+                                class="flex h-8 w-8 items-center justify-center
+                                       rounded-full border border-yellow-500
+                                       text-yellow-400">
+                                <i class="ri-whatsapp-line"></i>
+                            </a>
+
+                            <a href="#"
+                                class="flex h-8 w-8 items-center justify-center
+                                       rounded-full border border-yellow-500
+                                       text-yellow-400">
+                                <i class="ri-phone-line"></i>
+                            </a>
+
+                            <a href="#"
+                                class="flex h-8 w-8 items-center justify-center
+                                       rounded-full border border-yellow-500
+                                       text-yellow-400">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Person -->
+                <div
+                    class="overflow-hidden rounded-xl
+                           border border-white/20 bg-[#090909]"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1618077360395-f3068be8e001?auto=format&fit=crop&w=700&q=80"
+                        class="h-48 w-full object-cover"
+                    >
+
+                    <div class="p-4">
+
+                        <h3 class="font-bold">Vikash</h3>
+
+                        <p class="text-sm font-semibold text-yellow-400">
+                            Paint Specialist
+                        </p>
+
+                        <p class="mt-2 text-xs leading-5 text-gray-400">
+                            Brings perfection to every coat with
+                            detail and precision.
+                        </p>
+
+                        <div class="mt-4 flex gap-3">
+
+                            <a href="#"
+                                class="flex h-8 w-8 items-center justify-center
+                                       rounded-full border border-yellow-500
+                                       text-yellow-400">
+                                <i class="ri-whatsapp-line"></i>
+                            </a>
+
+                            <a href="#"
+                                class="flex h-8 w-8 items-center justify-center
+                                       rounded-full border border-yellow-500
+                                       text-yellow-400">
+                                <i class="ri-phone-line"></i>
+                            </a>
+
+                            <a href="#"
+                                class="flex h-8 w-8 items-center justify-center
+                                       rounded-full border border-yellow-500
+                                       text-yellow-400">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Person -->
+                <div
+                    class="overflow-hidden rounded-xl
+                           border border-white/20 bg-[#090909]"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=700&q=80"
+                        class="h-48 w-full object-cover"
+                    >
+
+                    <div class="p-4">
+
+                        <h3 class="font-bold">Rohit</h3>
+
+                        <p class="text-sm font-semibold text-yellow-400">
+                            Customization Expert
+                        </p>
+
+                        <p class="mt-2 text-xs leading-5 text-gray-400">
+                            Turns your ideas into reality with the
+                            best mods and upgrades.
+                        </p>
+
+                        <div class="mt-4 flex gap-3">
+
+                            <a href="#"
+                                class="flex h-8 w-8 items-center justify-center
+                                       rounded-full border border-yellow-500
+                                       text-yellow-400">
+                                <i class="ri-whatsapp-line"></i>
+                            </a>
+
+                            <a href="#"
+                                class="flex h-8 w-8 items-center justify-center
+                                       rounded-full border border-yellow-500
+                                       text-yellow-400">
+                                <i class="ri-phone-line"></i>
+                            </a>
+
+                            <a href="#"
+                                class="flex h-8 w-8 items-center justify-center
+                                       rounded-full border border-yellow-500
+                                       text-yellow-400">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===================================================== -->
+    <!-- ABOUT / COMMITMENT -->
+    <!-- ===================================================== -->
+
+    <section
+        id="about"
+        class="px-5 pb-14 md:px-10"
+    >
+
+        <div
+            class="mx-auto flex max-w-[1180px] flex-col overflow-hidden
+                   rounded-2xl border border-yellow-500/40
+                   bg-[#090909] lg:flex-row"
+        >
+
+            <!-- Image -->
+            <div class="lg:w-[25%]">
+
+                <img
+                    src="./images/engine.webp"
+                    class="h-full min-h-[230px] w-full object-cover"
+                >
+
+            </div>
+
+
+            <!-- Text -->
+            <div class="flex-1 p-7">
+
+                <p
+                    class="text-xs font-bold tracking-[0.3em]
+                           text-yellow-400"
+                >
+                    WHY PRIME MOTORS —
+                </p>
+
+                <h2 class="mt-2 text-2xl font-black md:text-3xl">
+                    MORE THAN JUST REPAIRS.
+                    <br>
+
+                    <span class="text-yellow-400">
+                        IT'S A COMMITMENT.
+                    </span>
+                </h2>
+
+            </div>
+
+
+            <!-- Features -->
+            <div
+                class="grid flex-1 border-t border-white/10
+                       sm:grid-cols-3 lg:border-l lg:border-t-0"
+            >
+
+                <div
+                    class="border-b border-white/10 p-6
+                           text-center sm:border-b-0
+                           sm:border-r"
+                >
+
+                    <i class="ri-settings-5-line text-3xl text-yellow-400"></i>
+
+                    <h3 class="mt-3 font-bold">
+                        Skilled Technicians
+                    </h3>
+
+                    <p class="mt-2 text-xs text-gray-400">
+                        Experienced, trained and passionate
+                        about cars.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="border-b border-white/10 p-6
+                           text-center sm:border-b-0
+                           sm:border-r"
+                >
+
+                    <i class="ri-shield-check-line text-3xl text-yellow-400"></i>
+
+                    <h3 class="mt-3 font-bold">
+                        Genuine Care
+                    </h3>
+
+                    <p class="mt-2 text-xs text-gray-400">
+                        Your car's safety and performance
+                        matter to us.
+                    </p>
+
+                </div>
+
+
+                <div class="p-6 text-center">
+
+                    <i class="ri-hand-heart-line text-3xl text-yellow-400"></i>
+
+                    <h3 class="mt-3 font-bold">
+                        Transparent Service
+                    </h3>
+
+                    <p class="mt-2 text-xs text-gray-400">
+                        Honest estimates, no hidden costs,
+                        always.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===================================================== -->
+    <!-- FOOTER -->
+    <!-- ===================================================== -->
+
+    <footer
+        id="contact"
+        class="border-t border-yellow-500/30
+               bg-[#050505] px-5 py-10 md:px-10"
+    >
+
+        <div
+            class="mx-auto grid max-w-[1180px] gap-10
+                   sm:grid-cols-2 lg:grid-cols-4"
+        >
+
+            <!-- Logo -->
+            <div class="text-center">
+
+                <img
+                    src="./images/brandlogo.png"
+                    alt="Prime Motors"
+                    class="h-32 w-auto"
+                >
+
+                <p class="mt-3 text-sm -translate-x-10 italic text-gray-400">
+                    Built for every drive.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div>
+
+                <h3
+                    class="mb-4 text-sm font-bold
+                           text-yellow-400"
+                >
+                    QUICK LINKS
+                </h3>
+
+                <div class="space-y-2 text-sm text-gray-400">
+
+                    <a href="#home" class="block hover:text-yellow-400">
+                        Home
+                    </a>
+
+                    <a href="#services" class="block hover:text-yellow-400">
+                        Services
+                    </a>
+
+                    <a href="#team" class="block hover:text-yellow-400">
+                        Team
+                    </a>
+
+                    <a href="#about" class="block hover:text-yellow-400">
+                        About
+                    </a>
+
+                    <a href="#contact" class="block hover:text-yellow-400">
+                        Contact
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Services -->
+            <div>
+
+                <h3
+                    class="mb-4 text-sm font-bold
+                           text-yellow-400"
+                >
+                    SERVICES
+                </h3>
+
+                <div class="space-y-2 text-sm text-gray-400">
+
+                    <p>Denting & Body Repair</p>
+                    <p>Painting & Color</p>
+                    <p>Full Car Service</p>
+                    <p>AC & Electrical</p>
+                    <p>Detailing & Ceramic</p>
+                    <p>Customization & Mods</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div>
+
+                <h3
+                    class="mb-4 text-sm font-bold
+                           text-yellow-400"
+                >
+                    CONTACT & WHATSAPP
+                </h3>
+
+                <a
+               href="https://wa.me/919939536053"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="flex items-center text-sm text-gray-300 transition hover:text-yellow-400"
+                >
+               <i class="ri-whatsapp-line mr-2 text-yellow-400"></i>
+               +91 9939536053
+           </a>           
+
+                <p class="mt-2 text-xs text-gray-500">
+                    Get instant support & book your service.
+                </p>
+                
+                <a
+                href="https://maps.app.goo.gl/ZnRzYMELHdg6ztyn9"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-3 flex items-center text-sm text-gray-300 transition hover:text-yellow-400"
+>
+                <i class="ri-map-pin-line mr-2 text-yellow-400"></i>
+                View Location on Google Maps</a>
+
+                <h3
+                    class="mb-3 mt-6 text-sm font-bold
+                           text-yellow-400"
+                >
+                    WORKSHOP HOURS
+                </h3>
+
+                <p class="text-sm text-gray-400">
+                    Mon - Sat: 9:00 AM - 7:00 PM
+                </p>
+
+                <p class="text-sm text-gray-400">
+                    Sunday: Closed
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom -->
+        <div
+            class="mx-auto mt-10 flex max-w-[1180px]
+                   flex-col justify-between gap-3
+                   border-t border-white/10 pt-5
+                   text-xs text-gray-500
+                   sm:flex-row"
+        >
+
+            <p>
+                © 2026 Prime Motors. All rights reserved.
+            </p>
+
+            <p class="font-semibold italic text-yellow-400">
+                Built for every drive.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
