@@ -91,8 +91,9 @@
 
 
             <!-- Book Button -->
-            <a
-                href="#contact"
+            <button
+                type="button"
+                onclick="openBookingModal()"
                 class="hidden rounded-full border border-yellow-400
                        px-5 py-3 text-sm font-semibold text-yellow-400
                        transition hover:bg-yellow-400 hover:text-black
@@ -100,7 +101,7 @@
             >
                 <i class="ri-calendar-line mr-2"></i>
                 BOOK A SERVICE
-            </a>
+            </button>
 
 
             <!-- Mobile Menu -->
@@ -256,50 +257,36 @@
 
                 <!-- Stats -->
                 <div
-                    class="mt-10 flex flex-wrap gap-7
-                           border-t border-white/20 pt-5"
-                >
+                class="mt-10 flex flex-wrap gap-7
+                        border-t border-white/20 pt-5"
+>
 
-                    <div class="flex items-center gap-3">
-                        <i class="ri-shield-check-line text-2xl text-yellow-400"></i>
+                <!-- Years Experience -->
+                <div class="flex items-center gap-3">
+                <i class="ri-shield-check-line text-2xl text-yellow-400"></i>
 
-                        <div>
-                            <p class="font-bold">10+</p>
-                            <p class="text-xs text-gray-400">
-                                Years Experience
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div class="flex items-center gap-3">
-                        <i class="ri-car-line text-2xl text-yellow-400"></i>
-
-                        <div>
-                            <p class="font-bold">500+</p>
-                            <p class="text-xs text-gray-400">
-                                Cars Serviced
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div class="flex items-center gap-3">
-                        <i class="ri-tools-line text-2xl text-yellow-400"></i>
-
-                        <div>
-                            <p class="font-bold">Complete</p>
-                            <p class="text-xs text-gray-400">
-                                Car Care
-                            </p>
-                        </div>
-                    </div>
-
+                <div>
+                    <p class="font-bold">10+</p>
+                    <p class="text-xs text-gray-400">
+                    Years Experience
+                    </p>
                 </div>
-
             </div>
 
+
+            <!-- Complete Car Care -->
+            <div class="flex items-center gap-3">
+            <i class="ri-tools-line text-2xl text-yellow-400"></i>
+
+            <div>
+            <p class="font-bold">Complete</p>
+            <p class="text-xs text-gray-400">
+                Car Care
+            </p>
         </div>
+    </div>
+
+</div>
 
     </section>
 
@@ -579,7 +566,7 @@
                 >
 
                     <img
-                        src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=900&q=80"
+                        src="https://img.magnific.com/free-photo/man-working-car-detailing-coating-car_1303-30592.jpg?semt=ais_hybrid&w=740&q=80"
                         class="absolute inset-0 h-full w-full object-cover
                                opacity-40 transition duration-500
                                group-hover:scale-105"
@@ -801,16 +788,16 @@
                 >
 
                     <img
-                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80"
-                        class="h-48 w-full object-cover"
+                        src="./images/vishwakarma.jpeg"
+                        class="h-48 w-full object-cover object-[center_30%]"
                     >
 
                     <div class="p-4">
 
-                        <h3 class="font-bold">Aman</h3>
+                        <h3 class="font-bold">Vishwakarma</h3>
 
                         <p class="text-sm font-semibold text-yellow-400">
-                            Master Technician
+                            Workshop Partner
                         </p>
 
                         <p class="mt-2 text-xs leading-5 text-gray-400">
@@ -856,20 +843,20 @@
                 >
 
                     <img
-                        src="https://images.unsplash.com/photo-1618077360395-f3068be8e001?auto=format&fit=crop&w=700&q=80"
-                        class="h-48 w-full object-cover"
+                        src="./images/MdChand.jpeg"
+                        class="h-48 w-full object-cover scale-110 object-[center_25%]"
                     >
 
                     <div class="p-4">
 
-                        <h3 class="font-bold">Vikash</h3>
+                        <h3 class="font-bold">Md Chand</h3>
 
                         <p class="text-sm font-semibold text-yellow-400">
-                            Paint Specialist
+                            Car denting & Body work
                         </p>
 
                         <p class="mt-2 text-xs leading-5 text-gray-400">
-                            Brings perfection to every coat with
+                            Brings perfection to the car body with
                             detail and precision.
                         </p>
 
@@ -912,7 +899,7 @@
 
                     <img
                         src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=700&q=80"
-                        class="h-48 w-full object-cover"
+                        class="h-48 w-full object-cover object-[center_22%]"
                     >
 
                     <div class="p-4">
@@ -1248,6 +1235,199 @@
 
     </footer>
 
+
+
+    <!-- ===================================================== -->
+    <!-- SERVICE BOOKING MODAL -->
+    <!-- ===================================================== -->
+
+    <div
+        id="bookingModal"
+        class="fixed inset-0 z-[100] hidden items-center justify-center
+               bg-black/80 px-4 py-6 backdrop-blur-sm"
+        onclick="closeBookingModal(event)"
+    >
+        <div
+
+            id="bookingFormBox"
+            class="relative max-h-[90vh] w-full max-w-xl overflow-y-auto
+                    rounded-2xl border border-yellow-500/40 bg-[#080808]/95
+                    p-6 shadow-[0_0_50px_rgba(255,190,0,0.12)]
+                    backdrop-blur-xl md:p-8
+                    opacity-0 scale-95 translate-y-4
+                    transition-all duration-300 ease-out"
+            onclick="event.stopPropagation()"
+        >
+            <button
+                type="button"
+                onclick="closeBookingModal()"
+                class="absolute right-4 top-4 flex h-9 w-9 items-center
+                       justify-center rounded-full border border-white/20
+                       text-xl text-gray-300 transition
+                       hover:border-yellow-400 hover:text-yellow-400"
+                aria-label="Close booking form"
+            >
+                <i class="ri-close-line"></i>
+            </button>
+
+            <div class="mb-7 pr-10">
+                <p class="text-xs font-bold tracking-[0.3em] text-yellow-400">
+                    PRIME MOTORS
+                </p>
+                <h2 class="mt-2 text-2xl font-black md:text-3xl">
+                    NEW SERVICE BOOKING
+                </h2>
+                <p class="mt-2 text-sm text-gray-400">
+                    Fill in the details below and continue on WhatsApp.
+                </p>
+            </div>
+
+            <form id="bookingForm" onsubmit="sendBookingToWhatsApp(event)">
+                
+                <!-- Your Name -->
+                <div class="mb-5">
+                <label
+                for="customerName"
+                class="mb-2 block text-sm font-semibold text-white"
+                >
+                1. Please Enter your name
+                </label>
+
+                <input
+                type="text"
+                id="customerName"
+                name="customerName"
+                placeholder="Enter your name"
+                required
+                class="w-full rounded-xl border border-white/10 bg-white/5
+                        px-4 py-3 text-sm text-white outline-none
+                        transition focus:border-yellow-400
+                        focus:ring-1 focus:ring-yellow-400"
+                />
+                </div>
+
+                <div class="mb-5">
+                    <label class="mb-2 block text-sm font-semibold">
+                        1. What type of service do you want?
+                    </label>
+
+                    <div class="grid gap-2 sm:grid-cols-2">
+                        <label class="flex cursor-pointer items-center gap-3 rounded-lg border border-white/10 bg-white/[0.03] p-3 transition hover:border-yellow-500/50">
+                            <input type="checkbox" name="service" value="Denting & Body Repair" class="h-4 w-4 accent-yellow-400">
+                            <span class="text-sm">Denting & Body Repair</span>
+                        </label>
+
+                        <label class="flex cursor-pointer items-center gap-3 rounded-lg border border-white/10 bg-white/[0.03] p-3 transition hover:border-yellow-500/50">
+                            <input type="checkbox" name="service" value="Painting & Color" class="h-4 w-4 accent-yellow-400">
+                            <span class="text-sm">Painting & Color</span>
+                        </label>
+
+                        <label class="flex cursor-pointer items-center gap-3 rounded-lg border border-white/10 bg-white/[0.03] p-3 transition hover:border-yellow-500/50">
+                            <input type="checkbox" name="service" value="Full Car Service" class="h-4 w-4 accent-yellow-400">
+                            <span class="text-sm">Full Car Service</span>
+                        </label>
+
+                        <label class="flex cursor-pointer items-center gap-3 rounded-lg border border-white/10 bg-white/[0.03] p-3 transition hover:border-yellow-500/50">
+                            <input type="checkbox" name="service" value="AC & Electrical" class="h-4 w-4 accent-yellow-400">
+                            <span class="text-sm">AC & Electrical</span>
+                        </label>
+
+                        <label class="flex cursor-pointer items-center gap-3 rounded-lg border border-white/10 bg-white/[0.03] p-3 transition hover:border-yellow-500/50">
+                            <input type="checkbox" name="service" value="Detailing & Ceramic" class="h-4 w-4 accent-yellow-400">
+                            <span class="text-sm">Detailing & Ceramic</span>
+                        </label>
+
+                        <label class="flex cursor-pointer items-center gap-3 rounded-lg border border-white/10 bg-white/[0.03] p-3 transition hover:border-yellow-500/50">
+                            <input type="checkbox" name="service" value="Customization & Mods" class="h-4 w-4 accent-yellow-400">
+                            <span class="text-sm">Customization & Mods</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <label for="carName" class="mb-2 block text-sm font-semibold">
+                        2. What's the name of your car?
+                    </label>
+
+                    <input
+                        id="carName"
+                        name="carName"
+                        type="text"
+                        placeholder="e.g. Hyundai Creta"
+                        required
+                        class="w-full rounded-lg border border-white/15 bg-white/[0.04]
+                               px-4 py-3 text-sm text-white outline-none
+                               placeholder:text-gray-600 transition
+                               focus:border-yellow-400"
+                    >
+                </div>
+
+                <div class="mb-5">
+                    <label for="serviceDate" class="mb-2 block text-sm font-semibold">
+                        3. Preferred Date of Service
+                    </label>
+
+                    <input
+                        id="serviceDate"
+                        name="serviceDate"
+                        type="date"
+                        required
+                        class="w-full rounded-lg border border-white/15 bg-white/[0.04]
+                               px-4 py-3 text-sm text-white outline-none
+                               transition focus:border-yellow-400
+                               [color-scheme:dark]"
+                    >
+                </div>
+
+                <div class="mb-6">
+                    <label for="serviceTime" class="mb-2 block text-sm font-semibold">
+                        4. Preferred Time
+                    </label>
+
+                    <input
+                        id="serviceTime"
+                        name="serviceTime"
+                        type="time"
+                        required
+                        class="w-full rounded-lg border border-white/15 bg-white/[0.04]
+                               px-4 py-3 text-sm text-white outline-none
+                               transition focus:border-yellow-400
+                               [color-scheme:dark]"
+                    >
+                </div>
+
+                <div class="mb-6 rounded-xl border border-yellow-500/30
+                            bg-yellow-400/[0.06] p-4">
+                    <div class="flex gap-3">
+                        <i class="ri-image-add-line mt-0.5 text-xl text-yellow-400"></i>
+
+                        <div>
+                            <p class="text-sm font-bold text-yellow-400">
+                                IMPORTANT
+                            </p>
+                            <p class="mt-1 text-xs leading-5 text-gray-300">
+                                Please attach a recent photo of your car before
+                                sending this message on WhatsApp.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <button
+                    type="submit"
+                    class="flex w-full items-center justify-center rounded-full
+                           bg-yellow-400 px-6 py-3.5 text-sm font-black
+                           text-black shadow-[0_0_25px_rgba(255,190,0,0.2)]
+                           transition hover:bg-yellow-300"
+                >
+                    <i class="ri-whatsapp-line mr-2 text-lg"></i>
+                    SEND BOOKING ON WHATSAPP
+                </button>
+
+            </form>
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 
